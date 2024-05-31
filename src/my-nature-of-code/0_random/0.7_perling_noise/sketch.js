@@ -1,11 +1,11 @@
-let t = 0.0;
+let time = 0.0;
 function setup() {
 	createCanvas(360, 240);
 }
 
 function draw() {
 	background(255);
-	let xoff = t;
+	let xoff = time;
 	noFill();
 	stroke('orange');
 	strokeWeight(2);
@@ -16,5 +16,5 @@ function draw() {
 		vertex(i, y);
 	}
 	endShape();
-	t += 0.01;
+	time += 0.01;
 }
