@@ -1,4 +1,5 @@
 let time = 0.0;
+let jump = 1;
 function setup() {
 	createCanvas(360, 240);
 }
@@ -12,7 +13,7 @@ function draw() {
 	beginShape();
 	for (let i = 0; i < width; i++) {
 		let y = noise(xoff) * height;
-		xoff += 0.01;
+		xoff += 1;
 		vertex(i, y);
 	}
 	endShape();
