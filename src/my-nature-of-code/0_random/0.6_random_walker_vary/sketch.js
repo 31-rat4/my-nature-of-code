@@ -6,7 +6,7 @@ class Walker {
 		this.y = height / 2;
 		this.velocity = velocity;
 		this.size = size;
-		this.step_size = 20;
+		this.step_size = random(0, 20);
 	}
 	draw() {
 		stroke(0);
